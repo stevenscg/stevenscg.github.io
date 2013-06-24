@@ -4,7 +4,7 @@
   <title><![CDATA[Chris Stevens]]></title>
   <link href="http://stevenscg.github.io/atom.xml" rel="self"/>
   <link href="http://stevenscg.github.io/"/>
-  <updated>2013-06-24T11:47:59-05:00</updated>
+  <updated>2013-06-24T12:09:14-05:00</updated>
   <id>http://stevenscg.github.io/</id>
   <author>
     <name><![CDATA[Chris Stevens]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Still Here]]></title>
+    <link href="http://stevenscg.github.io/blog/2013/06/24/still-here/"/>
+    <updated>2013-06-24T12:03:00-05:00</updated>
+    <id>http://stevenscg.github.io/blog/2013/06/24/still-here</id>
+    <content type="html"><![CDATA[<p>Here we are half-way through 2013. It&rsquo;s been an incredibly busy couple of quarters and I need to work my way through 6
+months of back post ideas to get caught up.</p>
+
+<p>I found that Octopress was just a bit easier to use than standard Jekyll and Jekyll Bootstrap. It took a while, but I
+finally found a tiny speck of time to upgrade and port over the few old posts that I had.  Looking forward to easier
+and more frequent posts now.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[New Ride: 2013 Motobecane Vent Noir]]></title>
