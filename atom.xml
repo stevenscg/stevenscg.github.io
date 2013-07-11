@@ -4,7 +4,7 @@
   <title><![CDATA[Chris Stevens]]></title>
   <link href="http://stevenscg.github.io/atom.xml" rel="self"/>
   <link href="http://stevenscg.github.io/"/>
-  <updated>2013-07-10T23:38:58-05:00</updated>
+  <updated>2013-07-11T13:47:05-05:00</updated>
   <id>http://stevenscg.github.io/</id>
   <author>
     <name><![CDATA[Chris Stevens]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Practical API Strategy, Tools, and Techniques]]></title>
+    <link href="http://stevenscg.github.io/blog/2013/07/06/practical-api-strategy-tools-and-techniques/"/>
+    <updated>2013-07-06T13:39:00-05:00</updated>
+    <id>http://stevenscg.github.io/blog/2013/07/06/practical-api-strategy-tools-and-techniques</id>
+    <content type="html"><![CDATA[<p>I will be presenting at the DFW API Professionals Meetup on July 11, 2013 in Irving, Texas.</p>
+
+<p>This talk covers practical API strategy, tools, and techniques used by Traxo during 5 years of bootstrapping in the travel industry. With few open APIs in the travel industry, the Traxo API provided an exciting avenue for commercialization and growth even at the proof of concept stage. We will cover technical aspects of productizing an API, working with enterprise customers, and how utilizing partners like 3Scale can minimize time to market.</p>
+
+<p>RSVP: <a href="http://www.meetup.com/DFW-API-Professionals/events/128685842/"><a href="http://www.meetup.com/DFW-API-Professionals/events/128685842/">http://www.meetup.com/DFW-API-Professionals/events/128685842/</a></a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Still Here]]></title>
