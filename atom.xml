@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Chris Stevens]]></title>
-  <link href="http://stevenscg.github.io/atom.xml" rel="self"/>
-  <link href="http://stevenscg.github.io/"/>
-  <updated>2013-07-11T13:47:05-05:00</updated>
-  <id>http://stevenscg.github.io/</id>
+  <link href="http://chrisstevens.us/atom.xml" rel="self"/>
+  <link href="http://chrisstevens.us/"/>
+  <updated>2013-07-11T13:51:42-05:00</updated>
+  <id>http://chrisstevens.us/</id>
   <author>
     <name><![CDATA[Chris Stevens]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Practical API Strategy, Tools, and Techniques]]></title>
-    <link href="http://stevenscg.github.io/blog/2013/07/06/practical-api-strategy-tools-and-techniques/"/>
+    <link href="http://chrisstevens.us/blog/2013/07/06/practical-api-strategy-tools-and-techniques/"/>
     <updated>2013-07-06T13:39:00-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2013/07/06/practical-api-strategy-tools-and-techniques</id>
+    <id>http://chrisstevens.us/blog/2013/07/06/practical-api-strategy-tools-and-techniques</id>
     <content type="html"><![CDATA[<p>I will be presenting at the DFW API Professionals Meetup on July 11, 2013 in Irving, Texas.</p>
 
 <p>This talk covers practical API strategy, tools, and techniques used by Traxo during 5 years of bootstrapping in the travel industry. With few open APIs in the travel industry, the Traxo API provided an exciting avenue for commercialization and growth even at the proof of concept stage. We will cover technical aspects of productizing an API, working with enterprise customers, and how utilizing partners like 3Scale can minimize time to market.</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[Still Here]]></title>
-    <link href="http://stevenscg.github.io/blog/2013/06/24/still-here/"/>
+    <link href="http://chrisstevens.us/blog/2013/06/24/still-here/"/>
     <updated>2013-06-24T12:03:00-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2013/06/24/still-here</id>
+    <id>http://chrisstevens.us/blog/2013/06/24/still-here</id>
     <content type="html"><![CDATA[<p>Here we are half-way through 2013. It&rsquo;s been an incredibly busy couple of quarters and I need to work my way through 6
 months of back post ideas to get caught up.</p>
 
@@ -42,9 +42,9 @@ and more frequent posts now.</p>
   
   <entry>
     <title type="html"><![CDATA[New Ride: 2013 Motobecane Vent Noir]]></title>
-    <link href="http://stevenscg.github.io/blog/2012/10/24/motobecane-vent-noir/"/>
+    <link href="http://chrisstevens.us/blog/2012/10/24/motobecane-vent-noir/"/>
     <updated>2012-10-24T15:20:00-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2012/10/24/motobecane-vent-noir</id>
+    <id>http://chrisstevens.us/blog/2012/10/24/motobecane-vent-noir</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve been loathing my cardio workout options for years all while finding out that more and more folks around me that love cycling.</p>
 
 <p>Flower Mound, as it turns out, is also a very nice place for road cycling.  Compared to Dallas and surrounding city-locked suburbs, we can be out in the coutry air in just a few minutes by bike.</p>
@@ -61,9 +61,9 @@ and more frequent posts now.</p>
   
   <entry>
     <title type="html"><![CDATA[Switching from Wordpress to Jekyll]]></title>
-    <link href="http://stevenscg.github.io/blog/2012/10/01/switching-from-wordpress-to-jekll/"/>
+    <link href="http://chrisstevens.us/blog/2012/10/01/switching-from-wordpress-to-jekll/"/>
     <updated>2012-10-01T00:00:00-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2012/10/01/switching-from-wordpress-to-jekll</id>
+    <id>http://chrisstevens.us/blog/2012/10/01/switching-from-wordpress-to-jekll</id>
     <content type="html"><![CDATA[<p>Too many projects, too little time. This is the story of the last year around here!</p>
 
 <p>Fall is a busy time of year since we are always anxious to escape the confines for air conditioning as the Texas summer heat finally subsides.  Add two young kids, some traveling, and a rather exciting Texas Aggie football season to the mix and free time approaches zero rapidly.</p>
@@ -93,9 +93,9 @@ and more frequent posts now.</p>
   
   <entry>
     <title type="html"><![CDATA[Flying Holiday Light Tours]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/12/19/flying-holiday-light-tours/"/>
+    <link href="http://chrisstevens.us/blog/2011/12/19/flying-holiday-light-tours/"/>
     <updated>2011-12-19T03:37:21-06:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/12/19/flying-holiday-light-tours</id>
+    <id>http://chrisstevens.us/blog/2011/12/19/flying-holiday-light-tours</id>
     <content type="html"><![CDATA[<p>I wrote up some recommendations for a friend last week about aerial holiday light tours.  These were specific to the Dallas/Fort Worth metro area, but the general information is valid for almost any community with an airport.</p>
 
 <p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/starlight_downtown.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/starlight_downtown-300x202.jpg"></a></p>
@@ -130,9 +130,9 @@ http://www.monarchair.com/</a> (Addison Airport)
   
   <entry>
     <title type="html"><![CDATA[A Relic: Flying the Arc...]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/11/01/a-relic-flying-the-arc/"/>
+    <link href="http://chrisstevens.us/blog/2011/11/01/a-relic-flying-the-arc/"/>
     <updated>2011-11-01T06:30:11-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/11/01/a-relic-flying-the-arc</id>
+    <id>http://chrisstevens.us/blog/2011/11/01/a-relic-flying-the-arc</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/kcll-ils34-arc.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/kcll-ils34-arc-300x225.jpg" title="[ILS34 approach to College Station]" ></a></p>
 
 <p>We had a great 25+mph tailwind during last weekend&rsquo;s trip from Dallas to College Station that cut our enroute time down to just over 1 hour.  With winds out of the North, Easterwood was landing to the North as any good airport should and there was also a light layer of haze that apparently kept most of the VFR (non-instrument rated) pilots at home.</p>
@@ -153,9 +153,9 @@ http://www.monarchair.com/</a> (Addison Airport)
   
   <entry>
     <title type="html"><![CDATA[By The Numbers: College Station for $53]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/10/18/by-the-numbers-college-station-for-53-dollars/"/>
+    <link href="http://chrisstevens.us/blog/2011/10/18/by-the-numbers-college-station-for-53-dollars/"/>
     <updated>2011-10-18T16:14:02-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/10/18/by-the-numbers-college-station-for-53-dollars</id>
+    <id>http://chrisstevens.us/blog/2011/10/18/by-the-numbers-college-station-for-53-dollars</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/charlotte-flying.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/charlotte-flying-225x300.jpg" title="[Charlotte Flying]" ></a></p>
 
 <p>&ldquo;By the numbers&rdquo; in aviation essentially means operating the aircraft in a manner intended by the manufacturer and validated via flight test.  We have numbers for takeoff power, approach speed, engine rpm, fuel flow, etc.  Most of these are spelled out in the airplane flight manual and hopefully ensure safe and performant operations.</p>
@@ -226,9 +226,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[5 Quick Takes for September]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/09/13/5-quick-takes-for-september/"/>
+    <link href="http://chrisstevens.us/blog/2011/09/13/5-quick-takes-for-september/"/>
     <updated>2011-09-13T04:00:55-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/09/13/5-quick-takes-for-september</id>
+    <id>http://chrisstevens.us/blog/2011/09/13/5-quick-takes-for-september</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/claire-at-kyle-field-223x300.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/claire-at-kyle-field-223x300.jpg" title="[Claire at Kyle Field]" ></a></p>
 
 <p>So many interesting things, so little time.</p>
@@ -257,9 +257,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[Interactive Charts for your Travel Score]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/07/27/interactive-charts-for-your-travel-score/"/>
+    <link href="http://chrisstevens.us/blog/2011/07/27/interactive-charts-for-your-travel-score/"/>
     <updated>2011-07-27T04:31:44-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/07/27/interactive-charts-for-your-travel-score</id>
+    <id>http://chrisstevens.us/blog/2011/07/27/interactive-charts-for-your-travel-score</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-comparison.png"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-comparison.png" title="[Head-to-head competition with the new travel score charts]" ></a></p>
 
 <p>It&rsquo;s time for a little head-to-head competition on Traxo!</p>
@@ -274,9 +274,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[Annual Maintenance - Part Two]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/06/28/annual-maintenance-part-two/"/>
+    <link href="http://chrisstevens.us/blog/2011/06/28/annual-maintenance-part-two/"/>
     <updated>2011-06-28T13:40:16-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/06/28/annual-maintenance-part-two</id>
+    <id>http://chrisstevens.us/blog/2011/06/28/annual-maintenance-part-two</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-annual-2010.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-annual-2010.jpg" title="[Mooney Annual - 2010]" ></a></p>
 
 <p>The great news is that our little 45-year old airplane had no major issues this year.  We had both mechanical and avionics inspections going simultaneously and bought 1 battery, 1 ELT (emergency locator transmitter), and 1 very tired transponder (responds to ATC radar) in the process.</p>
@@ -289,9 +289,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[Fun with Gowalla]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/06/20/fun-with-gowalla/"/>
+    <link href="http://chrisstevens.us/blog/2011/06/20/fun-with-gowalla/"/>
     <updated>2011-06-20T03:30:29-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/06/20/fun-with-gowalla</id>
+    <id>http://chrisstevens.us/blog/2011/06/20/fun-with-gowalla</id>
     <content type="html"><![CDATA[<p>I get to play with some really neat consumer web technologies as I consult for companies around Dallas/Fort Worth.  It seems that check-in services like Foursquare and Facebook Places are everywhere these days.  Many of the tech industry experts say that the check-in itself is already a commodity.  To stay relevant, those companies now need to build additional value and depth into their offerings or leverage their platform to supply other partners with unique content.</p>
 
 <p>One of my personal favorites is <a href="http://www.gowalla.com">Gowalla</a> based right down the road in Austin, Texas (ok, it&rsquo;s a long road).  My family has been loyal to them since our first smartphones arrived and haven&rsquo;t looked back.  Other than our common Texas heritage, they have always had a fun and engaging user experience and the absolute best artwork that I have ever seen at scale.  Period.  From what I hear and have seen recently, Gowalla has been building depth in their service that should be exciting to see in the near future.</p>
@@ -312,9 +312,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[Five Reasons why your Traxo Travel Score Matters]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/06/20/five-reasons-why-your-traxo-travel-score-matters/"/>
+    <link href="http://chrisstevens.us/blog/2011/06/20/five-reasons-why-your-traxo-travel-score-matters/"/>
     <updated>2011-06-20T03:00:15-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/06/20/five-reasons-why-your-traxo-travel-score-matters</id>
+    <id>http://chrisstevens.us/blog/2011/06/20/five-reasons-why-your-traxo-travel-score-matters</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-tiers.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-tiers.jpg" title="[Travel Score Tiers]" ></a></p>
 
 <p>Even if you&rsquo;re not a Double Black Diamond Executive Platinum High-Fivin&#8217; the TSA kind of traveler, you probably take several trips each year for business and leisure.  You do take vacations right?  I hope you do.</p>
@@ -344,9 +344,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[Annual Maintenance - Part One]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/06/13/annual-maintenance-part-1/"/>
+    <link href="http://chrisstevens.us/blog/2011/06/13/annual-maintenance-part-1/"/>
     <updated>2011-06-13T05:46:04-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/06/13/annual-maintenance-part-1</id>
+    <id>http://chrisstevens.us/blog/2011/06/13/annual-maintenance-part-1</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-prop-vertical-e1308064417309-224x300.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-prop-vertical-e1308064417309-224x300.jpg" title="[Mooney]" ></a></p>
 
 <p>As I mentioned in <a href="http://chrisstevens.us/2011/06/its-annual-maintenance-time-again/">this post</a> last week, we started the required annual inspection on our Mooney today.  This post covers the first few days of a typical inspection like this.</p>
@@ -383,9 +383,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[How much does an airplane cost anyway?]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/06/09/how-much-does-an-airplane-cost-anyway/"/>
+    <link href="http://chrisstevens.us/blog/2011/06/09/how-much-does-an-airplane-cost-anyway/"/>
     <updated>2011-06-09T17:32:48-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/06/09/how-much-does-an-airplane-cost-anyway</id>
+    <id>http://chrisstevens.us/blog/2011/06/09/how-much-does-an-airplane-cost-anyway</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney_logo_tag.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney_logo_tag-300x231.jpg" title="[Mooney Logo]" ></a></p>
 
 <p>Most people I talk to don&rsquo;t know much about general aviation.  The closest I usually get is that somebody&rsquo;s dad was a pilot or airline pilot or they rode in a &ldquo;cessna&rdquo; once (yup, that&rsquo;s a lowercase &ldquo;c&rdquo; as if it encompassed an entire genre of vehicles).  It&rsquo;s a mysterious topic to most people, so I always try to relate it to something a little more mainstream, like cars.</p>
@@ -420,9 +420,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[It's Annual Maintenance Time Again]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/06/03/its-annual-maintenance-time-again/"/>
+    <link href="http://chrisstevens.us/blog/2011/06/03/its-annual-maintenance-time-again/"/>
     <updated>2011-06-03T10:33:21-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/06/03/its-annual-maintenance-time-again</id>
+    <id>http://chrisstevens.us/blog/2011/06/03/its-annual-maintenance-time-again</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-annual-2010.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-annual-2010.jpg" title="[Mooney Annual Maintenance]" ></a></p>
 
 <p>Each year, aircraft owners enjoy at least a week of downtime for FAA-mandated &ldquo;annual&rdquo; maintenance.  People often ask me how I feel about flying a machine built in 1965.  I typically respond with something like: Imagine if we took your car apart once a year, looked into the engine, analyzed the oil for contaminants and metallics, and applied a list of manufacturer required maintenance and safety items from the previous year.  You would see cars that last longer, perform better, and are safer.  By that same token, the design lifespan for cars is short enough to almost negate this level of attention.</p>
@@ -437,9 +437,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[Flying Digital: iPad + ForeFlight HD (Part 2)]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/04/06/flying-digital-ipad-foreflight-hd-part-2/"/>
+    <link href="http://chrisstevens.us/blog/2011/04/06/flying-digital-ipad-foreflight-hd-part-2/"/>
     <updated>2011-04-06T07:35:51-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/04/06/flying-digital-ipad-foreflight-hd-part-2</id>
+    <id>http://chrisstevens.us/blog/2011/04/06/flying-digital-ipad-foreflight-hd-part-2</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/dfw-enroute-chart-e1302109024961.png"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/dfw-enroute-chart-e1302109024961.png" title="[DFW Enroute Chart]" ></a></p>
 
 <p>In <a href="http://chrisstevens.us/2011/04/04/flying-digital-ipad-foreflight-hd/">Part 1</a>, I talked about the benefits of going paperless in the cockpit with the iPad.  For this installment, I&rsquo;ll go over some actual early in-flight operations.  Mounting options, flight control clearance, and screen polarization are covered.</p>
@@ -456,9 +456,9 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[Flying Digital: iPad + ForeFlight HD (Part 1)]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/04/04/flying-digital-ipad-foreflight-hd/"/>
+    <link href="http://chrisstevens.us/blog/2011/04/04/flying-digital-ipad-foreflight-hd/"/>
     <updated>2011-04-04T09:02:08-05:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/04/04/flying-digital-ipad-foreflight-hd</id>
+    <id>http://chrisstevens.us/blog/2011/04/04/flying-digital-ipad-foreflight-hd</id>
     <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/foreflight-ipad.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/foreflight-ipad.jpg" title="[ForeFlight on iPad]" ></a></p>
 
 <p>One of the on-going expenses in operating an aircraft is buying both VFR and IFR charts and publications every 1-2 months.  These aren&rsquo;t normally expensive either, typically about $8 per region, but our usual intra-Texas flights require 6 different publications.  Imagine then traveling across several states (our trip to Florida required 10 pubs) or the farther.</p>
@@ -481,10 +481,10 @@ Fly</p>
   
   <entry>
     <title type="html"><![CDATA[First Post]]></title>
-    <link href="http://stevenscg.github.io/blog/2011/03/05/first-post/"/>
+    <link href="http://chrisstevens.us/blog/2011/03/05/first-post/"/>
     <updated>2011-03-05T12:50:31-06:00</updated>
-    <id>http://stevenscg.github.io/blog/2011/03/05/first-post</id>
-    <content type="html"><![CDATA[<p><a href="http://stevenscg.github.io/assets/wp-content/uploads/2011/03/shuttle-launch-atlantis-sts-131.jpg"><img src="http://stevenscg.github.io/assets/wp-content/uploads/2011/03/shuttle-launch-atlantis-sts-131-225x300.jpg" alt="" /></a></p>
+    <id>http://chrisstevens.us/blog/2011/03/05/first-post</id>
+    <content type="html"><![CDATA[<p><a href="http://chrisstevens.us/assets/wp-content/uploads/2011/03/shuttle-launch-atlantis-sts-131.jpg"><img src="http://chrisstevens.us/assets/wp-content/uploads/2011/03/shuttle-launch-atlantis-sts-131-225x300.jpg" alt="" /></a></p>
 
 <p>First posts are fun.  Sometimes it&rsquo;s just important to get started.</p>
 
