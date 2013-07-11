@@ -1,0 +1,4 @@
+[submodule "source/talks"]
+        path = talks
+        url = https://github.com/stevenscg/talks.git
+
