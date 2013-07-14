@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: GPS | Chris Stevens]]></title>
+  <link href="http://chrisstevens.us/blog/categories/gps/atom.xml" rel="self"/>
+  <link href="http://chrisstevens.us/"/>
+  <updated>2013-07-14T09:42:25-05:00</updated>
+  <id>http://chrisstevens.us/</id>
+  <author>
+    <name><![CDATA[Chris Stevens]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Relic: Flying the Arc...]]></title>
+    <link href="http://chrisstevens.us/blog/2011/11/01/a-relic-flying-the-arc/"/>
+    <updated>2011-11-01T06:30:11-05:00</updated>
+    <id>http://chrisstevens.us/blog/2011/11/01/a-relic-flying-the-arc</id>
+    <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/kcll-ils34-arc.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/kcll-ils34-arc-300x225.jpg" title="[ILS34 approach to College Station]" ></a></p>
+
+<p>We had a great 25+mph tailwind during last weekend&rsquo;s trip from Dallas to College Station that cut our enroute time down to just over 1 hour.  With winds out of the North, Easterwood was landing to the North as any good airport should and there was also a light layer of haze that apparently kept most of the VFR (non-instrument rated) pilots at home.</p>
+
+<p>College Station has a arc transition for their north-bound ILS approach.  Very few arc transitions exist these days due mostly to excellent CONUS radar coverage and GPS navigation.  Any transition segment, arc or otherwise, is designed to safely feed air traffic from the enroute system onto the final approach segment while ensuring terrain clearance.  An arc design may be used where a straight-in or angular transition segment is not possible, say for mountainous terrain or some other hazard.</p>
+
+<p>Given our rather speedy trip and with both kids still asleep, I thought I would contribute to my required instrument currency and requested the full arc.</p>
+
+<p>The Houston Center controller initially cleared us to the CINED waypoint just outside the ILS approach since we are GPS equipped.  I had to specifically request the arc portion of the procedure starting from OSUME waypoint, which was granted after some playful banter about my sanity.</p>
+
+<p>Why arc transitions are &ldquo;relics&rdquo; (at least for non-GPS aircraft)?  Time and complexity.  The arc radius is 15 miles.  It added about 15 minutes to our approach over the radar-vectored transition to the final approach segment.  Also, they can be a bit tricky to fly.  Our GPS flew some of it perfectly and I flew the second-half manually.</p>
+
+<p>Using the distance from the radio navaid (15 nautical-miles in this case), fly a heading along the arc for 10-degrees of radial change, turn 10 degrees left in the direction of the arc, and then update your nav radio by 10-degrees in the same direction.  The KCLL arc is about 80 degrees, so you get to do this about 8 times, all the while correcting for the wind.  If done correctly, the distance reading from the radio navaid should be nearly constant throughout.</p>
+
+<p>Why would we keep such &ldquo;relics&rdquo; around?  For the day that the GPS constellation geometry leaves it unfit for approach usage and the radar at Houston Center goes on the fritz.  That&rsquo;s why we go out and practice them, too.</p>
+]]></content>
+  </entry>
+  
+</feed>

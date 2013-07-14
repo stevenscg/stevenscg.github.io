@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Traxo | Chris Stevens]]></title>
+  <link href="http://chrisstevens.us/blog/categories/traxo/atom.xml" rel="self"/>
+  <link href="http://chrisstevens.us/"/>
+  <updated>2013-07-14T09:42:25-05:00</updated>
+  <id>http://chrisstevens.us/</id>
+  <author>
+    <name><![CDATA[Chris Stevens]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Practical API Strategy, Tools, and Techniques]]></title>
+    <link href="http://chrisstevens.us/blog/2013/07/06/practical-api-strategy-tools-and-techniques/"/>
+    <updated>2013-07-06T13:39:00-05:00</updated>
+    <id>http://chrisstevens.us/blog/2013/07/06/practical-api-strategy-tools-and-techniques</id>
+    <content type="html"><![CDATA[<p>I will be presenting at the DFW API Professionals Meetup on July 11, 2013 in Irving, Texas.</p>
+
+<p>This talk covers practical API strategy, tools, and techniques used by Traxo during 5 years of bootstrapping in the travel industry. With few open APIs in the travel industry, the Traxo API provided an exciting avenue for commercialization and growth even at the proof of concept stage. We will cover technical aspects of productizing an API, working with enterprise customers, and how utilizing partners like 3Scale can minimize time to market.</p>
+
+<p>RSVP: <a href="http://www.meetup.com/DFW-API-Professionals/events/128685842/"><a href="http://www.meetup.com/DFW-API-Professionals/events/128685842/">http://www.meetup.com/DFW-API-Professionals/events/128685842/</a></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Interactive Charts for your Travel Score]]></title>
+    <link href="http://chrisstevens.us/blog/2011/07/27/interactive-charts-for-your-travel-score/"/>
+    <updated>2011-07-27T04:31:44-05:00</updated>
+    <id>http://chrisstevens.us/blog/2011/07/27/interactive-charts-for-your-travel-score</id>
+    <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-comparison.png"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-comparison.png" title="[Head-to-head competition with the new travel score charts]" ></a></p>
+
+<p>It&rsquo;s time for a little head-to-head competition on Traxo!</p>
+
+<p>Log in and visit each of your buddy&rsquo;s profile pages to see how you stack up with each other.</p>
+
+<p>In the image above, I&rsquo;m on the profile page of one Andres Fabris (some bigshot over at this wicked awesome startup called Traxo).  My score is the meager one in green and his is in blue.</p>
+
+<p>Elsewhere on the site, our charts are now interactive, so you can lookup a specific day&rsquo;s score from up to 45 days ago.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fun with Gowalla]]></title>
+    <link href="http://chrisstevens.us/blog/2011/06/20/fun-with-gowalla/"/>
+    <updated>2011-06-20T03:30:29-05:00</updated>
+    <id>http://chrisstevens.us/blog/2011/06/20/fun-with-gowalla</id>
+    <content type="html"><![CDATA[<p>I get to play with some really neat consumer web technologies as I consult for companies around Dallas/Fort Worth.  It seems that check-in services like Foursquare and Facebook Places are everywhere these days.  Many of the tech industry experts say that the check-in itself is already a commodity.  To stay relevant, those companies now need to build additional value and depth into their offerings or leverage their platform to supply other partners with unique content.</p>
+
+<p>One of my personal favorites is <a href="http://www.gowalla.com">Gowalla</a> based right down the road in Austin, Texas (ok, it&rsquo;s a long road).  My family has been loyal to them since our first smartphones arrived and haven&rsquo;t looked back.  Other than our common Texas heritage, they have always had a fun and engaging user experience and the absolute best artwork that I have ever seen at scale.  Period.  From what I hear and have seen recently, Gowalla has been building depth in their service that should be exciting to see in the near future.</p>
+
+<p>Since the check-in is, at least part of the time, related to your travel activity, you will probably check-in if you find a nice dinner spot or the perfect secluded beach while traveling.  This activity fits perfectly with both the social and dashboard models we have at Traxo.  In fact, my integration with Gowalla just went live today!</p>
+
+<p>If you visit the Travel Sites tab within your account on Traxo.com, you&rsquo;ll see the &ldquo;Connect New Site&rdquo; option.  Follow that link and look for &ldquo;Location Services&rdquo; on the subsequent page.  Gowalla is now listed as an option and we&rsquo;ll ask you to connect your account.  Once you have authorized access, we will begin pulling in all of your past check-ins in the background.  It takes a while, especially if you are very active with the service, because we have to stay below a certain rate when talking to the Gowalla servers.  Shortly, you will begin to see some very neat things happening.</p>
+
+<p>First, you may notice some new historical trips appear in your account.  The Traxo platform is looking for activity away from your hometown, and now check-ins will qualify as a trip and you didn&rsquo;t have to lift a finger to catalog a trip that you might have forgotten about.</p>
+
+<p>Next, you may notice some trips have new activities attached to them.  Take for example our real trip to New Orleans this past Spring.  We arrived at Lakefront Airport and checked-in.  Beignets at Cafe Du Monde?  Heck yeah, it&rsquo;s &ldquo;The one, the only&rdquo; after all.  NOLA gets a mention for a wonderful birthday dinner.  Look at the image below.  These activities were taken from my New Orleans trip page on Traxo, where our trip matching logic has woven these into and around air, car, and hotel bookings that were harvested from other travel sites.  Pretty slick, eh?   Almost like I had something to do with it. ;&ndash;)</p>
+
+<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/gowalla-activity-segments.png"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/gowalla-activity-segments.png" title="[Gowalla Activity Segments on Traxo]" ></a></p>
+
+<p>Finally, Traxo is also releasing our new <a href="http://chrisstevens.us/2011/06/five-reasons-why-your-traxo-travel-score-matters">Traxo Travel Score</a> feature today.  "Verified" activity is a big driver in that score, and Gowalla check-ins qualify just like a flight booked on Travelocity or American Airlines, hotel by Marriott, or Hertz rental car.  It&rsquo;s hard to make it any easier to get a great score.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Five Reasons why your Traxo Travel Score Matters]]></title>
+    <link href="http://chrisstevens.us/blog/2011/06/20/five-reasons-why-your-traxo-travel-score-matters/"/>
+    <updated>2011-06-20T03:00:15-05:00</updated>
+    <id>http://chrisstevens.us/blog/2011/06/20/five-reasons-why-your-traxo-travel-score-matters</id>
+    <content type="html"><![CDATA[<p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-tiers.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/travel-score-tiers.jpg" title="[Travel Score Tiers]" ></a></p>
+
+<p>Even if you&rsquo;re not a Double Black Diamond Executive Platinum High-Fivin' the TSA kind of traveler, you probably take several trips each year for business and leisure.  You do take vacations right?  I hope you do.</p>
+
+<p>If you are a <a href="http://www.traxo.com">Traxo</a> member, you can turn those trips into some cool stuff and it is launching today as the &ldquo;Traxo Travel Score&rdquo;.  I usually leave the PR to the company, but I think this feature is particularly cool and can provide some great value to all kinds of travelers.</p>
+
+<p>Similar to how <a href="http://www.klout.com">Klout</a> measures your online influence, Traxo can use all of your previous trip data to calculate your travel score.  Your score is a measure of your overall travel experience.</p>
+
+<h3>5 Reasons Why Your Traxo Travel Score Matters</h3>
+
+<ol>
+<li><p> Better travel recommendations.  Ask your Traxo Buddies with the highest scores or another high-scoring member.</p></li>
+<li><p> Build your travel reputation.  If you write about travel, we hope your score will be one of your best credentials.</p></li>
+<li><p> Earn perks.  Watch for great rewards from our partners.</p></li>
+<li><p> Get better service.  Travel vendors are excited to recognize expert travelers.</p></li>
+<li><p> Compete with your friends.  Who doesn&rsquo;t like a good competition.</p></li>
+</ol>
+
+
+<p>When I was first introduced to Klout, I had a hard time identifying the real-world value proposition.  In their defense, they were pretty new at the time and may have been a bit stealthy in their positioning.  The real-world value definitely there, though.  If you are influential online and speak out about a product or service either postively or negatively, online or in-person, an astute business owner can see a measure of your influence and has incentive to give you better service.  Well, in theory, at least.</p>
+
+<p>Your travel score will work the same way.  As you visit states and countries, spend nights away from home, and cover more miles, our system will find those trips and give you credit for those.  As, your score (your travel reputation) goes up, we hope you&rsquo;ll receive benefits from our partners and travel suppliers based on how, when, and where you travel.  Also, if you link your favorite travel accounts (airlines, hotels, car companies), we will give you <strong>more</strong> points because those bookings can be verified through our platform!</p>
+
+<p>Finally, if you&rsquo;re thinking that you don&rsquo;t travel enough or always drive yourself, never fear!  It just so happens that my family fits nicely into that category as well, except that we avoid commercial airlines and fly ourselves.  Be sure to link your travel accounts because Traxo will always be looking at those for new activity.  But did you know that you can check-in with <a href="http://www.gowalla.com">Gowalla</a> on your smartphone during your trip and we count those check-ins as verified travel just like an airline or hotel booking.  More on that in a later <a href="http://chrisstevens.us/2011/06/fun-with-gowalla">post</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
