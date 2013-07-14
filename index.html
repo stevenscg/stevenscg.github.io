@@ -9,7 +9,7 @@
   <meta name="author" content="Chris Stevens">
 
   
-  <meta name="description" content="I will be presenting at the DFW API Professionals Meetup on July 11, 2013 in Irving, Texas. This talk covers practical API strategy, tools, and &hellip;">
+  <meta name="description" content="There are some impressive new database technologies making the rounds in the tech blogs and conference circuit. These products and projects become &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,90 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/07/13/database-players-to-watch/">Database Players to Watch</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-13T19:56:00-05:00" pubdate data-updated="true">Jul 13<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There are some impressive new database technologies making the rounds in the tech blogs and conference circuit. These products and projects become frequent topics of discussion among my group of colleagues and I thought I would highlight a few of them just to stir the pot a bit.</p>
+
+<p>I work almost exclusively with MySQL as a primary datastore.  It is a great tool with open-source roots (more so in the earlier years. don&rsquo;t get me started) and street credit as the most widely used database system in the world.  Facebook might be one of the biggest known installations, though they use a number of different storage technologies and immense amounts of caching.</p>
+
+<p>Many developers voice concerns using MySQL &ldquo;at scale&rdquo;, but I suspect most businesses won&rsquo;t ever really test those limits.  Even if they do, I believe there are more immediate concerns about durability that apply to businesses of every size and even at the early stages.</p>
+
+<p>Sure, MySQL has replication. A slave instance or two should be enough, right?  Well, that buys you only master-slave or limited master-master in some cases. Auto-failover (and/or the subsequent manual recovery process) is tricky and sometimes downright dangerous.  What if you want to survive a data center failure?  How about running a global business with data centers throughout the World that all demand optimal localized performance?  Let&rsquo;s just say that it is non-trivial with stock MySQL.</p>
+
+<p>Over the last year, I have advised my clients about the benefits of non-relational datastores whenever it seemed like an appropriate fit for the project or variations on the stock MySQL installation that they might be using already.  Some of those clients even intended to run globally distributed applications and wanted multiple data centers for fault tolerance and localized performance.  Unfortunately, some very promising implementations of the tools I will discuss below never happened.  I think this is partly due to MySQL&rsquo;s success.  In several cases, those clients had experienced few truly significant downtime events and an even smaller number of regional or complete data center failures.  These &ldquo;wide-area&rdquo; events <strong>do</strong> happen, and I believe the most successful and revered properties on the web take these threats very seriously.</p>
+
+<p>Globally distributed applications often require localized performance.  We can do some work loading front-end assets from CDN edge nodes near the end user, but in the end, a long-haul WAN connection back to a database half-way around the world probably isn&rsquo;t going to be sufficient.</p>
+
+<p>Do your homework.  Keep an open mind.  Experiment and Test.  Then, deploy and measure.</p>
+
+<h3>MongoDB (<a href="http://www.10gen.com">10gen.com</a>)</h3>
+
+<p>MongoDB is a document database and probably wins the name recognition battle for the entire NoSQL segment of data storage.  10gen is the corporate entity that builds and supports MongoDB and they have a phenominal developer outreach and marketing program.</p>
+
+<p>From a developer&rsquo;s perspective, everything about the system sounds amazing.  It manages data as objects (&ldquo;documents&rdquo;) using an efficient binary JSON encoding mechanism., naturally aligning with the way developers work with objects in application code.  Mongo wants to keep all of your working set in memory to keep access times small.  Replica sets provide for durability.  Sharding for scalability, though I hear alot about the need to get your sharding decisions right from the beginning.</p>
+
+<p>Unfortunately, there is no shortage of blog posts detailing (seemingly) very reasonable concerns about operation of the system in real world applications even for which the system should be well suited.  There is also obvious trepidation among developers in general and backchannels full of grumbling.</p>
+
+<p>To be fair, there are some huge success stories as well.  The 10gen.com website has numerous webinars from and talks by some very significant players across industries: Foursquare, Disney, MapMyRide, Craigslist.  I have watched most of those webinars and talks and there are real devs solving real problems using Mongo in products that I use every single day.  In fact, I can often spot urls with the &ldquo;guid&rdquo; identifiers that Mongo (and maybe others) use as primary keys.</p>
+
+<p>Don&rsquo;t get me wrong, I am rooting for Mongo, still watching the videos and webinars, and looking for opportunities to use the system in my own projects.</p>
+
+<h3>GenieDB (<a href="http://www.geniedb.com">geniedb.com</a>)</h3>
+
+<p>A few months ago at Gluecon, I talked with the GenieDB guys and walked through the demo of their MySQL storage engine built specifically to deal with the issues I raised in the opening paragraphs.  Specifically, they appear to be solving the master-master and global distribution (multi-region / multi data center) problems that are usually just plain hard to do with MySQL.</p>
+
+<p>At the conference, they demo&rsquo;d a Wordpress site backed by two database instances: one on the west coast, one on the east coast.  Using different browser windows, you could write a comment to the west coast site and see it update on the east coast site almost immediately.  They then stopped the database server on the east coast while continuing to make changes on the west coast.  Their storage engine held those changes until the east coast rejoined and was brought back into sync within a few seconds.  No primary key or auto-increment issues to worry about.  No app changes required.  Toss in some global latency-based DNS routing (i.e. Route53, Dyn, etc) and you could have a global presence with regionalized performance.</p>
+
+<p>Genie is now marketing, almost exclusively it seems, a globally distributed MySQL as a Service.  This is also interesting.  They would like to de-throne the cloud standard at this point for MySQL: <a href="http://aws.amazon.com/rds/multi-az/">Multi-AZ RDS on Amazon</a>.  In theory, the GenieDB DbaaS product would have the advantage because the RDS solution is not master-master and is not multi-region.</p>
+
+<h3>Couchbase (<a href="http://www.couchbase.com">couchbase.com</a>)</h3>
+
+<p>In almost every web or mobile application, system, or component that we build these days, there are certain elements that could reasonably be served from a cache without any loss in functionality or value to the end user.  Caching can take many forms, but my personal go-to solution along with thousands of other developers is <a href="http://memcached.org/">Memcached</a>.  If you are new to what we call &ldquo;web scale&rdquo; systems, Memcached is a free distributed in-memory cache that a) just works, b) is trivial to integrate, and c) has been around for 10+ years with plenty of street credit as well.  It&rsquo;s up to you if you want to allocate excess RAM you have sitting underutilized on your existing servers or build a dedicated caching tier with high-memory instances.  Either way, you end up a vast amount of high-speed and highly available data storage for key-value pairs and driver support for almost every language.</p>
+
+<p>Also while at Gluecon, I took a bit of time to listen to the pitch from the nice folks at Couchbase.  They were sporting some awesome bright red &ldquo;You had me at JSON&rdquo; shirts, which seemed to be flying off the rack.  I haven&rsquo;t had a chance to fully dig into the documentation yet, but the Couchbase server is a drop-in replacement for Memcached, a document database (like Mongo) that speaks JSON, and features <a href="http://www.couchbase.com/docs/couchbase-manual-2.1.0/couchbase-admin-tasks-xdcr.html">cross data center replication XDCR</a>, auto-sharding, zero-downtime maintenance, and auto-failover.</p>
+
+<p>Sounds pretty amazing to me and I haven&rsquo;t heard any significant complaining in the real world just yet.  I&rsquo;m still very early in my Couchbase exploration, but it seems like a real contender.</p>
+
+<h3>Cassandra (<a href="http://cassandra.apache.org">cassandra.apache.org</a>)</h3>
+
+<p>I know very little about Cassandra so far, but the stats about Cassandra from Netflix and Twitter are almost unbelievable.  Netflix uses Cassandra as a globally distributed primary data store with 1000s of instances.</p>
+
+<blockquote><p>Cassandra&rsquo;s data model offers the convenience of column indexes with the performance of log-structured updates, strong support for denormalization and materialized views, and powerful built-in caching.</p></blockquote>
+
+<p>Given a hard requirement for high availability, fault tolerance, and multi data center support without a requirement for a SQL (relational) solution, I would recommend taking a hard look at Cassandra.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -573,48 +657,6 @@ Fly</p>
 <p>In the image above, I&rsquo;m on the profile page of one Andres Fabris (some bigshot over at this wicked awesome startup called Traxo).  My score is the meager one in green and his is in blue.</p>
 
 <p>Elsewhere on the site, our charts are now interactive, so you can lookup a specific day&rsquo;s score from up to 45 days ago.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/06/28/annual-maintenance-part-two/">Annual Maintenance - Part Two</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-06-28T13:40:16-05:00" pubdate data-updated="true">Jun 28<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-annual-2010.jpg"><img src="https://s3.amazonaws.com/static.chrisstevens.us/images/mooney-annual-2010.jpg" title="[Mooney Annual - 2010]" ></a></p>
-
-<p>The great news is that our little 45-year old airplane had no major issues this year.  We had both mechanical and avionics inspections going simultaneously and bought 1 battery, 1 ELT (emergency locator transmitter), and 1 very tired transponder (responds to ATC radar) in the process.</p>
-
-<p>The subsequent test flight was uneventful, although those are always a bit nerve wracking.  Let&rsquo;s just say that I know where a good grassy field is just south of the Northwest Regional Airport runway.</p>
-
-<p>It looks like we&rsquo;re ready for football season.</p>
 </div>
   
   

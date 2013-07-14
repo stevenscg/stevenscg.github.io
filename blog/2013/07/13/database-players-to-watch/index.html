@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Database Players to Watch - Chris Stevens</title>
+  <meta name="author" content="Chris Stevens">
+
+  
+  <meta name="description" content="There are some impressive new database technologies making the rounds in the tech blogs and conference circuit. These products and projects become &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://chrisstevens.us/blog/2013/07/13/database-players-to-watch/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Chris Stevens" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21885437-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Chris Stevens</a></h1>
+  
+    <h2>Aviation. Tech.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:chrisstevens.us" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/talks">Talks</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Database Players to Watch</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-13T19:56:00-05:00" pubdate data-updated="true">Jul 13<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>There are some impressive new database technologies making the rounds in the tech blogs and conference circuit. These products and projects become frequent topics of discussion among my group of colleagues and I thought I would highlight a few of them just to stir the pot a bit.</p>
+
+<p>I work almost exclusively with MySQL as a primary datastore.  It is a great tool with open-source roots (more so in the earlier years. don&rsquo;t get me started) and street credit as the most widely used database system in the world.  Facebook might be one of the biggest known installations, though they use a number of different storage technologies and immense amounts of caching.</p>
+
+<p>Many developers voice concerns using MySQL &ldquo;at scale&rdquo;, but I suspect most businesses won&rsquo;t ever really test those limits.  Even if they do, I believe there are more immediate concerns about durability that apply to businesses of every size and even at the early stages.</p>
+
+<p>Sure, MySQL has replication. A slave instance or two should be enough, right?  Well, that buys you only master-slave or limited master-master in some cases. Auto-failover (and/or the subsequent manual recovery process) is tricky and sometimes downright dangerous.  What if you want to survive a data center failure?  How about running a global business with data centers throughout the World that all demand optimal localized performance?  Let&rsquo;s just say that it is non-trivial with stock MySQL.</p>
+
+<p>Over the last year, I have advised my clients about the benefits of non-relational datastores whenever it seemed like an appropriate fit for the project or variations on the stock MySQL installation that they might be using already.  Some of those clients even intended to run globally distributed applications and wanted multiple data centers for fault tolerance and localized performance.  Unfortunately, some very promising implementations of the tools I will discuss below never happened.  I think this is partly due to MySQL&rsquo;s success.  In several cases, those clients had experienced few truly significant downtime events and an even smaller number of regional or complete data center failures.  These &ldquo;wide-area&rdquo; events <strong>do</strong> happen, and I believe the most successful and revered properties on the web take these threats very seriously.</p>
+
+<p>Globally distributed applications often require localized performance.  We can do some work loading front-end assets from CDN edge nodes near the end user, but in the end, a long-haul WAN connection back to a database half-way around the world probably isn&rsquo;t going to be sufficient.</p>
+
+<p>Do your homework.  Keep an open mind.  Experiment and Test.  Then, deploy and measure.</p>
+
+<h3>MongoDB (<a href="http://www.10gen.com">10gen.com</a>)</h3>
+
+<p>MongoDB is a document database and probably wins the name recognition battle for the entire NoSQL segment of data storage.  10gen is the corporate entity that builds and supports MongoDB and they have a phenominal developer outreach and marketing program.</p>
+
+<p>From a developer&rsquo;s perspective, everything about the system sounds amazing.  It manages data as objects (&ldquo;documents&rdquo;) using an efficient binary JSON encoding mechanism., naturally aligning with the way developers work with objects in application code.  Mongo wants to keep all of your working set in memory to keep access times small.  Replica sets provide for durability.  Sharding for scalability, though I hear alot about the need to get your sharding decisions right from the beginning.</p>
+
+<p>Unfortunately, there is no shortage of blog posts detailing (seemingly) very reasonable concerns about operation of the system in real world applications even for which the system should be well suited.  There is also obvious trepidation among developers in general and backchannels full of grumbling.</p>
+
+<p>To be fair, there are some huge success stories as well.  The 10gen.com website has numerous webinars from and talks by some very significant players across industries: Foursquare, Disney, MapMyRide, Craigslist.  I have watched most of those webinars and talks and there are real devs solving real problems using Mongo in products that I use every single day.  In fact, I can often spot urls with the &ldquo;guid&rdquo; identifiers that Mongo (and maybe others) use as primary keys.</p>
+
+<p>Don&rsquo;t get me wrong, I am rooting for Mongo, still watching the videos and webinars, and looking for opportunities to use the system in my own projects.</p>
+
+<h3>GenieDB (<a href="http://www.geniedb.com">geniedb.com</a>)</h3>
+
+<p>A few months ago at Gluecon, I talked with the GenieDB guys and walked through the demo of their MySQL storage engine built specifically to deal with the issues I raised in the opening paragraphs.  Specifically, they appear to be solving the master-master and global distribution (multi-region / multi data center) problems that are usually just plain hard to do with MySQL.</p>
+
+<p>At the conference, they demo&rsquo;d a Wordpress site backed by two database instances: one on the west coast, one on the east coast.  Using different browser windows, you could write a comment to the west coast site and see it update on the east coast site almost immediately.  They then stopped the database server on the east coast while continuing to make changes on the west coast.  Their storage engine held those changes until the east coast rejoined and was brought back into sync within a few seconds.  No primary key or auto-increment issues to worry about.  No app changes required.  Toss in some global latency-based DNS routing (i.e. Route53, Dyn, etc) and you could have a global presence with regionalized performance.</p>
+
+<p>Genie is now marketing, almost exclusively it seems, a globally distributed MySQL as a Service.  This is also interesting.  They would like to de-throne the cloud standard at this point for MySQL: <a href="http://aws.amazon.com/rds/multi-az/">Multi-AZ RDS on Amazon</a>.  In theory, the GenieDB DbaaS product would have the advantage because the RDS solution is not master-master and is not multi-region.</p>
+
+<h3>Couchbase (<a href="http://www.couchbase.com">couchbase.com</a>)</h3>
+
+<p>In almost every web or mobile application, system, or component that we build these days, there are certain elements that could reasonably be served from a cache without any loss in functionality or value to the end user.  Caching can take many forms, but my personal go-to solution along with thousands of other developers is <a href="http://memcached.org/">Memcached</a>.  If you are new to what we call &ldquo;web scale&rdquo; systems, Memcached is a free distributed in-memory cache that a) just works, b) is trivial to integrate, and c) has been around for 10+ years with plenty of street credit as well.  It&rsquo;s up to you if you want to allocate excess RAM you have sitting underutilized on your existing servers or build a dedicated caching tier with high-memory instances.  Either way, you end up a vast amount of high-speed and highly available data storage for key-value pairs and driver support for almost every language.</p>
+
+<p>Also while at Gluecon, I took a bit of time to listen to the pitch from the nice folks at Couchbase.  They were sporting some awesome bright red &ldquo;You had me at JSON&rdquo; shirts, which seemed to be flying off the rack.  I haven&rsquo;t had a chance to fully dig into the documentation yet, but the Couchbase server is a drop-in replacement for Memcached, a document database (like Mongo) that speaks JSON, and features <a href="http://www.couchbase.com/docs/couchbase-manual-2.1.0/couchbase-admin-tasks-xdcr.html">cross data center replication XDCR</a>, auto-sharding, zero-downtime maintenance, and auto-failover.</p>
+
+<p>Sounds pretty amazing to me and I haven&rsquo;t heard any significant complaining in the real world just yet.  I&rsquo;m still very early in my Couchbase exploration, but it seems like a real contender.</p>
+
+<h3>Cassandra (<a href="http://cassandra.apache.org">cassandra.apache.org</a>)</h3>
+
+<p>I know very little about Cassandra so far, but the stats about Cassandra from Netflix and Twitter are almost unbelievable.  Netflix uses Cassandra as a globally distributed primary data store with 1000s of instances.</p>
+
+<blockquote><p>Cassandra&rsquo;s data model offers the convenience of column indexes with the performance of log-structured updates, strong support for denormalization and materialized views, and powerful built-in caching.</p></blockquote>
+
+<p>Given a hard requirement for high availability, fault tolerance, and multi data center support without a requirement for a SQL (relational) solution, I would recommend taking a hard look at Cassandra.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Chris Stevens</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-13T19:56:00-05:00" pubdate data-updated="true">Jul 13<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://chrisstevens.us/blog/2013/07/13/database-players-to-watch/" data-via="stevenscg" data-counturl="http://chrisstevens.us/blog/2013/07/13/database-players-to-watch/" >Tweet</a>
+  
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/07/06/practical-api-strategy-tools-and-techniques/" title="Previous Post: Practical API Strategy, Tools, and Techniques">&laquo; Practical API Strategy, Tools, and Techniques</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/07/13/database-players-to-watch/">Database Players to Watch</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/06/practical-api-strategy-tools-and-techniques/">Practical API Strategy, Tools, and Techniques</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/24/still-here/">Still Here</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/24/motobecane-vent-noir/">New Ride: 2013 Motobecane Vent Noir</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/01/switching-from-wordpress-to-jekll/">Switching from Wordpress to Jekyll</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/stevenscg"  data-widget-id="268073536667652097">Tweets by @stevenscg</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/stevenscg">@stevenscg</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'stevenscg',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Chris Stevens -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>.</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'chrisstevens';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://chrisstevens.us/blog/2013/07/13/database-players-to-watch/';
+        var disqus_url = 'http://chrisstevens.us/blog/2013/07/13/database-players-to-watch/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21885437-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+</body>
+</html>
