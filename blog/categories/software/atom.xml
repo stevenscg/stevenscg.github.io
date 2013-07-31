@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software | Chris Stevens]]></title>
+  <link href="http://chrisstevens.us/blog/categories/software/atom.xml" rel="self"/>
+  <link href="http://chrisstevens.us/"/>
+  <updated>2013-07-31T10:04:53-05:00</updated>
+  <id>http://chrisstevens.us/</id>
+  <author>
+    <name><![CDATA[Chris Stevens]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Use Trello]]></title>
+    <link href="http://chrisstevens.us/blog/2013/07/31/use-trello/"/>
+    <updated>2013-07-31T07:14:00-05:00</updated>
+    <id>http://chrisstevens.us/blog/2013/07/31/use-trello</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve used project and task management tools of many different flavors and religions over the years.  PHBs (that&rsquo;s a Dilbert reference for you youngsters) love Gantt charts.  DoD loved their EVMS tools in the 90s.  Agile, scrum, and kanban are all the rage right now and provide alot of great benefits when used along with the appropriate dose of pragmatism.</p>
+
+<p>&ldquo;Organize Anything, together&rdquo; is the slogan over at <a href="https://trello.com">trello.com</a> and I must say that I am hooked on it.</p>
+
+<!-- more -->
+
+
+<blockquote><p>Trello is a collaboration tool that organizes your projects into boards. In one glance, Trello tells you what&rsquo;s being worked on, who&rsquo;s working on what, and where something is in a process.
+<cite><a href="http://help.trello.com/customer/portal/articles/887702-what-is-trello-">help.trello.com</a></cite></p></blockquote>
+
+<p>Boards are arbitrary containers that hold cards within lists.  My normal workflow typically has boards for major product lines and lists within each board for &ldquo;To Do&rdquo;, &ldquo;Doing&rdquo;, and &ldquo;Done&rdquo;.  I also have a general &ldquo;Business&rdquo; board for backlog items that are not yet associated with a specific product or span products.  &ldquo;Operations&rdquo; tasks have their own board as well.</p>
+
+<p>Cards are an extremely lightweight, yet powerful, visual representation of tasks or activities.  Lightweight since almost all of the advanced functionality is hidden by default.  Powerful in that almost every task-related feature I&rsquo;ve wanted is available with one keystroke: checklists, comments, image uploads, due dates, &ldquo;follow&rdquo; a task with subscriptions, etc.</p>
+
+<p>You drag cards up or down to prioritize.  Drag cards left or right to move through your own workflow.  Drag cards to the &ldquo;Archive&rdquo; when complete.</p>
+
+<p>Speed is a key feature as well.  Speed of access and data entry, to be specific.  When I&rsquo;m in the middle of coding something and an issue comes up, the very last thing I want is a clunky process to queue that item up for later consideration or review.  I want it out of my head immediately so I can stay focused.  I keep my Trello window pinned as a Firefox tab and can focus it immediately with CMD+1 (whatever tab number it is at the moment), &ldquo;N&rdquo; to create a new task, and I&rsquo;m back to work.  10-15 seconds, tops.</p>
+
+<p>After using the tool for a while, you may also notice that any open sessions across devices (laptop, workstation, mobile applications) are constantly updated.  Yes folks, this is a modern, <a href="http://en.wikipedia.org/wiki/Single-page_application">single-page web application</a>.  Using <a href="http://en.wikipedia.org/wiki/WebSocket">websockets</a>, updates are pushed to your open sessions.  Like. A. Boss.</p>
+
+<p>Another key differentiator is the fantastic (and also free) mobile application.  Same great feature set, but available on the go and with push notifications.</p>
+
+<p>All of the above features have collaboration features baked in as well.  I can create an Organization and invite others.</p>
+
+<p>My daily use cases are business-related, but Trello is also perfect for personal projects, household tasks, research, school work, or general family use.  My wife and I have a &ldquo;Family&rdquo; board with lists for &ldquo;Grocery&rdquo;, &ldquo;House&rdquo;, etc.</p>
+
+<p><a href="https://trello.com/signup">Sign-up</a> is quick, easy, and free.  Invite your team.  Invite your spouse and kids.  Just use it!</p>
+]]></content>
+  </entry>
+  
+</feed>

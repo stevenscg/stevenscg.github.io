@@ -4,7 +4,7 @@
   <title><![CDATA[Category: GenieDB | Chris Stevens]]></title>
   <link href="http://chrisstevens.us/blog/categories/geniedb/atom.xml" rel="self"/>
   <link href="http://chrisstevens.us/"/>
-  <updated>2013-07-14T09:49:59-05:00</updated>
+  <updated>2013-07-31T10:04:53-05:00</updated>
   <id>http://chrisstevens.us/</id>
   <author>
     <name><![CDATA[Chris Stevens]]></name>
@@ -19,6 +19,9 @@
     <updated>2013-07-13T19:56:00-05:00</updated>
     <id>http://chrisstevens.us/blog/2013/07/13/database-players-to-watch</id>
     <content type="html"><![CDATA[<p>There are some impressive new database technologies making the rounds in the tech blogs and conference circuit. These products and projects become frequent topics of discussion among my group of colleagues and I thought I would highlight a few of them just to stir the pot a bit.</p>
+
+<!-- more -->
+
 
 <p>I work almost exclusively with MySQL as a primary datastore.  It is a great tool with open-source roots (more so in the earlier years. don&rsquo;t get me started) and street credit as the most widely used database system in the world.  Facebook might be one of the biggest known installations, though they use a number of different storage technologies and immense amounts of caching.</p>
 
